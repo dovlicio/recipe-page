@@ -1,6 +1,6 @@
 :root {
     --color--rose-800: #7a284e;
-    --color--rose-800: #7a284e;
+    --color--rose-50: #fff7fb;
     --color--stone-900: #312e2c;
     --color--stone-600: #5f564d;
     --color--stone-150: #e3ddd7;
@@ -22,10 +22,12 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: 'Outfit', sans-serif;
     letter-spacing: 0;
     line-height: 1.5;
+    color: var(--color--stone-600);
+    background: var(--color--stone-100);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,20 +35,176 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
+h1, h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
 h1 {
-    font-size: 3.6rem;
+    font-size: 3.1rem;
+    color: var(--color--stone-900);
+}
+
+h2 {
+    font-size: 2.3rem;
+    color: var(--color--brown-800);
+    margin: 2.4rem 0;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--color--rose-800);
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 4rem;
     }
+
+    .hero {
+        margin: 0 4rem;
+        padding-top: 5rem;
+    }
 }
 
-h2 {
-    font-size: 2.8rem;
+ul {
+    padding-left: 2rem;
 }
 
-h3 {
-    font-size: 2rem;
+ul li {
+    padding-left: 1rem;
+    margin-top: 1rem;
 }
+
+ul li::marker {
+    font-weight: 400;
+    color: var(--color--stone-600);
+    font-size: 1rem;
+}
+
+ol {
+    padding-left: 2rem;
+}
+
+ol li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+ol li::marker {
+    color: var(--color--brown-800);
+    font-weight: 600;
+}
+
+td, th {
+    border-bottom: 2px solid var(--color--stone-150);
+    text-align: left;
+    padding: 0.2rem 0 1.4rem 2rem;
+}
+
+.container {
+    background: var(--color--white);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 620px;
+        margin: 12rem auto;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+.hero__image {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__image {
+        border-radius: 15px;
+    }
+}
+
+.recipe {
+    margin: 4rem 3rem 0;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .recipe {
+        margin: 5rem 4rem 0;
+        padding-bottom: 4rem;
+    }
+}
+.recipe__description {
+    margin: 1.8rem 0 3.4rem 0;
+}
+
+.recipe__preparation {
+    background: var(--color--rose-50);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.recipe__ingredients {
+    margin-bottom: 2.4rem;
+}
+
+.recipe__instructions {
+    border-top: 2px solid var(--color--stone-150);
+    border-bottom: 2px solid var(--color--stone-150);
+    padding-bottom: 1.5rem;
+}
+
+.nutrition__description {
+    margin-bottom: 2rem;
+}
+
+.nutrition__heading {
+    margin-bottom: 2rem;
+}
+
+.nutrition__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition__table th {
+    font-weight: 400;
+}
+
+.nutrition__table td {
+    color: var(--color--brown-800);
+    font-weight: 700;
+}
+
+.last-table-row {
+    border-bottom: 0;
+}
+
