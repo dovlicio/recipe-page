@@ -20,7 +20,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Live Site URL: [Solution online](https://dovlicio.github.io/social-links-profile-component/)
+- Live Site URL: [Solution online](https://dovlicio.github.io/recipe-page/)
 
 ## My process
 
