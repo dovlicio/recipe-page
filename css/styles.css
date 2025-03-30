@@ -1,0 +1,52 @@
+:root {
+    --color--rose-800: #7a284e;
+    --color--rose-800: #7a284e;
+    --color--stone-900: #312e2c;
+    --color--stone-600: #5f564d;
+    --color--stone-150: #e3ddd7;
+    --color--stone-100: #f3e5d7;
+    --color--brown-800: #854632;
+    --color--white: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
